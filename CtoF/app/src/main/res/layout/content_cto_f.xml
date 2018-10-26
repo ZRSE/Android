@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    tools:context=".CtoFActivity"
+    tools:showIn="@layout/activity_ctof">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/source_sans_pro_extralight"
+        android:text="C to F converter"
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:textColor="@android:color/white"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Material.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAccent"
+        android:text="Calculate"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/source_sans_pro_extralight"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+</LinearLayout>
