@@ -63,8 +63,24 @@ public class AverageActivity extends AppCompatActivity implements View.OnClickLi
 
                 Double averageOfTwoNumbers = (inputOne+inputTwo) / 2;
 
-                if (averageOfTwoNumbers < 10000) {
-                    average.setText("Average = " +Double.toString(averageOfTwoNumbers));
+                if (inputOne <= 100 || inputTwo <= 100) {
+
+                    Double letterGrade = averageOfTwoNumbers/10;
+                    String letter;
+
+                     if (9 <= letterGrade) {
+                        letter = "(A)";
+                    } else if (8 <= letterGrade) {
+                        letter = "(B)";
+                    } else if (7 <= letterGrade) {
+                        letter = "(C)";
+                    } else if (6 <= letterGrade) {
+                         letter = "(D)";
+                    } else {
+                        letter = "(F)";
+                    }
+
+                    average.setText("Average = " +Double.toString(averageOfTwoNumbers) +" "+ letter);
                 } else {
                     average.setText("Number too big..");
                 }
